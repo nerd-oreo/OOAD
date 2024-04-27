@@ -18,22 +18,17 @@ class Inventory:
         for guitar in self.__guitar_list:
             # Ignore serial number since it's unique
             # Ignore price since it's unique
-            builder = search_guitar.get_builder()
-            if builder is not None and builder != '' and builder == guitar.get_builder():
+            print(guitar)
+            if search_guitar.get_builder() != guitar.get_builder():
                 continue
             model = search_guitar.get_model()
-            if model is not None and model != '' and model == guitar.get_model():
+            if model is not None and model != '' and model.lower() != guitar.get_model().lower():
                 continue
-            guitar_type = search_guitar.get_type()
-            if guitar_type is not None and guitar_type != '' and guitar_type == guitar.get_type():
+            if search_guitar.get_type() != guitar.get_type():
                 continue
-            back_wood = search_guitar.get_back_wood()
-            if back_wood is not None and back_wood != '' and back_wood == guitar.get_back_wood():
+            if search_guitar.get_back_wood() != guitar.get_back_wood():
                 continue
-            top_wood = search_guitar.get_top_wood()
-            if top_wood is not None and top_wood != '' and top_wood == guitar.get_top_wood():
+            if search_guitar.get_top_wood() != guitar.get_top_wood():
                 continue
-            print(guitar)
             return guitar
-            # The function never return guitar, which cause the function does not work correctly
         return None
