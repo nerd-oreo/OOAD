@@ -1,7 +1,9 @@
 from inventory import Inventory
 from guitar import Guitar
+from builder import Builder
+from type import Type
+from wood import Wood
 from __init__ import guitars
-
 
 def init_inventory():
     inv = Inventory()
@@ -18,7 +20,7 @@ def init_inventory():
 
 def main():
     inventory = init_inventory()
-    search_guitar = Guitar('', 0, 'Cord', 'CR100', 'Acoustic', 'Mahogany', 'Spruce')
+    search_guitar = Guitar('', 0, Builder.FENDER, 'Stratocaster', Type.ELECTRIC, Wood.MAHOGANY, Wood.ALDER)
     guitar = inventory.search(search_guitar)
     
     print(f"You search for: \n{search_guitar}")
