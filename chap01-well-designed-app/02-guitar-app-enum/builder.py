@@ -5,9 +5,9 @@ class Builder(Enum):
     
     def __str__(self):
         match(self):
-            case self.FENDER: return 'fender'
-            case self.GIBSON: return 'gibson'
-            case self.MARTIN: return 'martin'
-            case self.YAMAHA: return 'yamaha'
-            case self.TAYLOR: return 'taylor'
-            case self.ANY: return 'any'
+            case self.FENDER: return 'Fender'
+            case self.GIBSON: return 'Gibson'
+            case self.MARTIN: return 'Martin'
+            case self.YAMAHA: return 'Yamaha'
+            case self.TAYLOR: return 'Taylor'
+            case self.ANY: return 'Any'
