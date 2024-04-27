@@ -18,7 +18,6 @@ class Inventory:
         for guitar in self.__guitar_list:
             # Ignore serial number since it's unique
             # Ignore price since it's unique
-            print(guitar)
             if search_guitar.get_builder() != guitar.get_builder():
                 continue
             model = search_guitar.get_model()
