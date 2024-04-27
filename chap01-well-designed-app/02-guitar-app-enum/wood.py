@@ -1,7 +1,7 @@
 from enum import Enum
 
 class Wood(Enum):
-    MAHOGANY, ALDER, MAPLE, INDIAN_ROSEWOOD, SITKA_SPRUCE, NATO, SPRUCE, ENGLEMANN_SPRUCE, ANY
+    MAHOGANY, ALDER, MAPLE, INDIAN_ROSEWOOD, SITKA_SPRUCE, NATO, SPRUCE, ENGLEMANN_SPRUCE, ANY = range(1, 10)
     
     def __str__(self):
         match(self):
