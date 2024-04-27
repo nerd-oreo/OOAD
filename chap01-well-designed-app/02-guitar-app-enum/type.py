@@ -6,6 +6,6 @@ class Type(Enum):
     def __str__(self):
         match(self):
             case self.ACCOUSTIC:
-                return 'accoustic'
+                return 'Accoustic'
             case self.ELECTRIC:
-                return 'electric'
+                return 'Electric'
