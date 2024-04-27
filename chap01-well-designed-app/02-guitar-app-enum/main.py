@@ -23,9 +23,8 @@ def main():
     search_guitar = Guitar('', 0, Builder.FENDER, 'Stratocaster', Type.ELECTRIC, Wood.MAHOGANY, Wood.ALDER)
     guitar = inventory.search(search_guitar)
     
-    print(f"You search for: \n{search_guitar}")
     if guitar != None:
-        print(f"You may like this {guitar.get_builder()} {guitar.get_type()} {guitar.get_back_wood()} {guitar.get_top_wood()}. Price: ${guitar.get_price()}")
+        print(f"You may like this:\n{guitar}")
     else:
         print("Sorry. We have nothing for you.")
 
